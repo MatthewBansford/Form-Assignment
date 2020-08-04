@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW1</title>
+    <style>
+      div {
+        /* display:inline-block; */
+        background-color: #f2f2f2;
+        /* width: 1000px; */
+        /* height: 50px; */
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        width: 58%;
+      }
+      #firstname {
+        display: block;
+        width: 610px;
+        height: 25px;
+      }
+      #lastname {
+        display: block;
+        width: 610px;
+        height: 25px;
+      }
+
+      #country {
+        display: block;
+        width: 618px;
+        height: 30px;
+      }
+      #subject {
+        display: block;
+        width: 612px;
+      }
+      button {
+        /* display: block; */
+        margin-top: 10px;
+        width: 70px;
+        height: 30px;
+        color: white;
+        background-color: green;
+        border-radius: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form action="Form">
+        <label for="firstname">First Name</label><br>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="Your name"
+          required
+        /> <br>
+
+        <label for="lastname">Last Name</label><br>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="Your last name"
+          required
+        /> <br>
+
+        <label for="country">Country</label><br>
+        <select name="country" id="country">
+          <option value="australia">Australia</option>
+          <option value="ghana">Ghana</option>
+          <option value="jamaica">Jamaica</option>
+          <option value="togo">Togo</option>
+        </select><br>
+
+        <label for="subject">Subject</label>
+        <textarea
+          name="subject"
+          id="subject"
+          cols="50"
+          rows="7"
+          placeholder="Write something..."
+        ></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
